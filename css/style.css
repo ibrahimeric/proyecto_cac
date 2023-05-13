@@ -11,7 +11,7 @@
 }
 
 body{
-  background-color: hsl(198, 17%, 20%);
+  background-color: hsla(200, 18%, 20%, 0.843);
 }
 
 .iconoLogo{
@@ -30,7 +30,6 @@ body{
   max-width: 100%; 
   height:  auto;
 }
-
 
 .menu1 {
   padding-top: 20px;
@@ -69,7 +68,7 @@ body{
   color: hsl(27, 98%, 83%);
   padding-top: 20px;
   text-align: center;
- padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .descripcionPrincipal{
@@ -104,30 +103,6 @@ body{
   filter: contrast(120%);
 }
 
-footer{
-  background-color:hsla(0, 0%, 100%, 0.5);
-  color: hsl(0, 0%, 0%);
-  text-align: center;
-  margin-bottom: 0;
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-
-.disenoWeb{
-  font-size: 18px;
-}
-
-.listaDisenoWeb{
-  list-style: none;
-  font-size: 18px;
-  list-style: none;
-
-}
-
-.logoInstagram{
-  width: 40px;
-}
-
 h1 {
   color:hsl(38,19%,44%)
 }
@@ -145,15 +120,17 @@ input{
 input#consulta {
 width: 450px;
 height: 250px;
-
 }
+
 div#formulario{
   margin: 50px 100px 200px 100px;
 }
+
 div#imgcontacto{
   float: right;
   height: 600px;
 }
+
 img{
   object-fit: fill;
 }
