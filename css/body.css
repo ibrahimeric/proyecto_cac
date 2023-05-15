@@ -1,0 +1,54 @@
+html, .body{
+    margin: 100;
+    padding: 100;
+}
+
+.body{
+    width: 100%;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    background-color: hsla(77, 18%, 92%, 0.876);
+    color: hsl(0, 0%, 0%);
+    text-align: center;
+    padding: 2rem;
+}
+
+h1,
+h2 {
+    font-size: 25px;
+    padding-bottom: 1rem;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 16px;
+}
+
+.main_galeria {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    width: 90%;
+
+}
+
+.main_galeria img {
+    width: 5px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.fotosPrincipal {
+    width: 100px;
+    height: 180px;
+}
+
+.main_galeria img:hover {
+    cursor: crosshair;
+    width: 200px;
+    opacity: 1;
+    filter: contrast(120%);
+}

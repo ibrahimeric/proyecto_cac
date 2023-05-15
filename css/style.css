@@ -1,56 +1,5 @@
 * {
     margin: 0px;
     padding: 0px;
-}
-
-.container {
-    background-color: hsla(199, 32%, 44%, 0.518);
-    color: hsl(0, 0%, 0%);
-    margin: 0;
-    padding: 0;
-    font-size: 24px;
-}
-
-.main_principal {
-    color: hsl(30, 13%, 9%);
-    text-align: center;
-    padding: 2rem;
-}
-
-h1,
-h2 {
-    font-size: 28px;
-    padding-bottom: 1rem;
-}
-
-p {
-    font-size: 16px;
-}
-
-.main_galeria {
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    width: 90%;
-
-}
-
-.main_galeria img {
-    width: 5px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: .5s ease;
-}
-
-.fotosPrincipal {
-    width: 100px;
-    height: 180px;
-}
-
-.main_galeria img:hover {
-    cursor: crosshair;
-    width: 200px;
-    opacity: 1;
-    filter: contrast(120%);
+    font-family: sans-serif;
 }
