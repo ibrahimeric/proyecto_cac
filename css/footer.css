@@ -1,10 +1,13 @@
-.footer {
+.sb_footer {
     background-color: hsla(175, 29%, 34%, 0.83);
-    ;
 }
 
-.section_padding {
-    padding-top: 5rem;
+.sb_footer .sb_footer_links {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
 }
 
 .sb_footer {
