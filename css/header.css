@@ -1,0 +1,80 @@
+.header { 
+    display:flex;
+    background: (white, white, gray);
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.header img {
+    height: 65px;
+    width: 180px;
+}
+
+.iconoLogo {
+    width: 100px;
+    height: 100px;
+    justify-content: left;
+}
+
+#logoPrincipal {
+    width: 400px;
+}
+
+.botonMenu {
+    margin-left: 150px;
+    color: hsl(40, 21%, 5%);
+    padding-right: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.botonMenu:hover {
+    color: hsl(82, 29%, 55%);
+}
+
+@media screen and (max-width:850px){
+    .header{
+        font-size: 25px;
+        line-height: 15px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .header .iconoLogo{
+        margin-bottom: 0px;
+    }
+    .header .botonMenu{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:550px){
+    .header{
+        font-size: 18px;
+        line-height: 5px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .header_links{
+        line-height: 20px;
+        display: flex;
+    }
+}
+
+@media screen and (max-width:400px){
+    .header h1{
+        font-size: 27px;
+        line-height: 38px;
+    }
+    .header_img{
+        margin: 0;
+    }
+    
+    .header_links{
+        font-size: 14px;
+        line-height: 20px;
+        display: flex;
+        flex: auto;
+    }
+}
