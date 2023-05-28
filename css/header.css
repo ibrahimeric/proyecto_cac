@@ -1,4 +1,5 @@
-.header { 
+.header {
+    width: 100%;
     display:flex;
     background: (white, white, gray);
     align-items: center;
@@ -31,6 +32,7 @@
 
 .botonMenu:hover {
     color: hsl(82, 29%, 55%);
+
 }
 
 @media screen and (max-width:850px){
@@ -42,7 +44,7 @@
         flex-direction: column;
     }
     .header .iconoLogo{
-        margin-bottom: 0px;
+        margin-bottom: 20px;
     }
     .header .botonMenu{
         margin: 0;
@@ -53,22 +55,23 @@
     .header{
         font-size: 18px;
         line-height: 5px;
-        margin-left: 20px;
+        /* margin-left: 20px; */
         margin-bottom: 20px;
     }
     .header_links{
+        margin-left: 50px;
         line-height: 20px;
         display: flex;
     }
 }
 
 @media screen and (max-width:400px){
+    .header{
+        width: 100%;
+    }
     .header h1{
         font-size: 27px;
         line-height: 38px;
-    }
-    .header_img{
-        margin: 0;
     }
     
     .header_links{
