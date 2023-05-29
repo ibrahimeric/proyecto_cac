@@ -66,10 +66,7 @@ p {
 iframe{
     width: 550px;
     height: 300px;
-    background-color: #726bab;
     color: #fff;
-    padding: 5px;
-    cursor: pointer;
     margin-top: auto;
     margin-bottom: 50px;
 }

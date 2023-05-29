@@ -1,0 +1,113 @@
+.body{
+    background-color: aquamarine;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.white {
+    color: hsl(0, 0%, 0%)
+}
+
+#txt {
+    width: auto;
+    border-radius: 10px;
+    border-style: inset;
+}
+
+textarea {
+    width: 450px;
+    background-color: rgba(250, 235, 215, 0.784);
+    height: 250px;
+    resize: none;
+    border: solid black
+}
+
+#chkb {
+    margin-left: 50px;
+}
+
+#consulta {
+    width: 100%;
+    max-width: 450px;
+    height: 250px;
+    max-height: 250px;
+    border: solid black
+}
+
+#formulario {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    justify-content: center;
+    --form-ok-color: rgb(10, 204, 10);
+    --form-error-color: red;
+    margin-bottom: 30px;
+
+}
+
+#formulario :required:valid {
+    border: thin solid var(--form-ok-color)
+}
+
+#formulario :required:invalid {
+    border: thin solid var(--form-error-color)
+}
+
+
+#imgcontacto {
+    flex: 1;
+    float: right;
+    width: auto;
+    height: auto;
+    margin: 40px;
+}
+
+#imgcont {
+    border-radius: 60px;
+    width: 100%;
+    height: auto;
+}
+
+#enviar:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#enviar {
+    background-color: hsl(38, 19%, 44%);
+    cursor: pointer;
+}
+
+.contact-form-error {
+    margin-top: -1rem;
+    background-color: var(--form-error-color);
+    color: white;
+    transition: all 800ms ease;
+}
+
+.contact-form-error.is-active {
+    display: block;
+    animation: show-message 1s 1 normal 0s ease-out both;
+}
+
+.none {
+    display: none;
+}
+
+#name {
+    background-color: rgba(250, 235, 215, 0.784);
+}
+
+#email {
+    background-color: rgba(250, 235, 215, 0.784);
+}

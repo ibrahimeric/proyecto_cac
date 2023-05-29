@@ -12,10 +12,11 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!--GOOGLE FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/body.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <script type="module" src="../js/indexDOM.js"></script>
     <title>Rhythm House. Academia de Música</title>
 
 </head>
@@ -33,7 +34,7 @@
                 <a class="botonMenu" href="../index.html">HOME</a>
                 <a class="botonMenu" href="#">CURSOS</a>
                 <a class="botonMenu" href="#">¿QUIÉNES SOMOS?</a>
-                <a class="botonMenu" href="#">SUSCRIBIRSE</a>
+                <a class="botonMenu" href="#">CONTACTO</a>
             </div>
         </nav>
     </header>
@@ -47,17 +48,38 @@
                 <img src="img/blackMinimal.png" alt="">
             </div>
 
-            <div class="newletter">
-                <h2>SUSCRIBITE A NUESTRO NEWSLETTER</h2>
-                <form id="emailForm" action="" method="POST">
-                    <label for="email"></label>
-                    <input type="email" placeholder="Ingresá tu mail">
-                    <br>
-                    <br>
-                    <button>Suscribirme</button>
-                    <br>
-                    <br>
-                </form>
+            <div class="box">
+                <div id="imgcontacto">
+                    <h2>FORMULARIO DE CONTACTO</h2>
+                    <img id="imgcont" src="../img/musica-para-estudiar.jpg" alt="Imagen de contacto">
+                </div>
+                <div id="formulario">
+                    <form id="form" class="form" target="_blank">
+                        <label class="white" for="nombreapellido">Nombre y Apellido:</label><br>
+                        <input type="text" name="nombreapellido" id="name"
+                            title="Nombre solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                            required><br>
+                        <label class="white" for="email">Email:</label><br>
+                        <input type="text" id="email" for="email" name="email" title="Email debe ser your@email.com"
+                            pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required
+                            placeholder="Ingresá tu mail"><br>
+                        <span class="white">¿Que instrumento musical te interesaría aprender?</span><br>
+                        <input type="checkbox" id="chkb1" class="chkb" name="guitarra">
+                        <label class="white" for="guitarra">Guitarra</label><br>
+                        <input type="checkbox" id="chkb2" class="chkb" name="bateria">
+                        <label class="white" for="bateria">Batería</label><br>
+                        <input type="checkbox" id="chkb3" class="chkb" name="bajo">
+                        <label class="white" for="bajo">Bajo</label><br>
+                        <input type="checkbox" id="chkb4" class="chkb" name="saxofon">
+                        <label class="white" for="saxofon">Saxofón</label><br>
+                        <input type="checkbox" id="chkb5" class="chkb" name="otro">
+                        <label class="white" for="otro">Otro</label><br>
+                        <label class="white" for="consulta">Si tenes alguna duda o consulta podes hacerla aquí abajo:
+                        </label><br>
+                        <textarea type="text" class="areadetexto" id="consulta" name="consulta" required></textarea><br>
+                        <input type="submit" id="enviar" value="enviar" name="enviar"><br>
+                    </form>
+                </div>
             </div>
     </main>
 
@@ -82,11 +104,12 @@
                     <div class="sb_footer_links_div">
                         <h4 class="footer_titulo">Contacto</h4>
                         <ul class='iconLista'>
-                            <li><a class='facebook' href="https://www.facebook.com/profile.php?id=100093154056964" target="_blank"><i
-                                        class="fab fa-facebook-f fa-2x"></i></a></li>
-                            <li><a class='instagram' href="https://www.instagram.com/academiademusicarh/#" target="_blank"><i
-                                        class="fab fa-instagram fa-2x"></i></a></li>
-                            <li><a class='twitter' href="https://twitter.com/RyhthmHouseAcad" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
+                            <li><a class='facebook' href="https://www.facebook.com/profile.php?id=100093154056964"
+                                    target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+                            <li><a class='instagram' href="https://www.instagram.com/academiademusicarh/#"
+                                    target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+                            <li><a class='twitter' href="https://twitter.com/RyhthmHouseAcad" target="_blank"><i
+                                        class="fab fa-twitter fa-2x"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -125,7 +148,6 @@
             </div>
         </div>
     </footer>
-    <script src="js/indexdom.js"></script>
 </body>
 
 </html>
